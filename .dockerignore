@@ -1,0 +1,35 @@
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Git and IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Local ChromaDB database
+rag_system/chroma_db/
+chroma_db/
+
+# Local PDFs
+rag_system/data/*.pdf
+
+# Notebooks and temporary files
+.ipynb_checkpoints/
+*.log
+.pytest_cache/
+.DS_Store
+Thumbs.db
+rag_system/chroma_db/
+chroma_db/
+rag_system/data/*.pdf

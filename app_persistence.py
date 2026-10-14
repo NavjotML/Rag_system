@@ -1,12 +1,15 @@
 import streamlit as st
 from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
+from langchain_huggingface import HuggingFaceEmbeddings
+import os
 
 from rag_system.embedding.embeddings import embed_documents
 from rag_system.vectorstores.vectorstore import load_vectorstore
 from rag_system.retrival.retrivals import create_retrievers
 from rag_system.llmprompt.llmprompt import create_llm, create_prompt
 
+os.environ['LANGCHAIN_PROJECTS']='RAG CHATBOT'
 load_dotenv()
 
 st.title('PDF QUERY RETRIEVER CHATBOT')

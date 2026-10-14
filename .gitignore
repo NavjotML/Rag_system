@@ -58,3 +58,12 @@ htmlcov/
 
 # Streamlit secrets
 .streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+venv/
+rag_system/chroma_db/
+chroma_db/
+rag_system/data/*.pdf
